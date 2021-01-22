@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://recursos_game/assets/montanha.jpg" type="Texture" id=1]
+[ext_resource path="res://Scenes/flores.tscn" type="PackedScene" id=2]
+
+[node name="mundo" type="Node2D"]
+
+[node name="cenario" type="Sprite" parent="."]
+position = Vector2( 617.985, 628.874 )
+scale = Vector2( 1.22251, 1.65888 )
+texture = ExtResource( 1 )
+offset = Vector2( -262.836, -143.062 )
+
+[node name="flores_grupo" parent="." instance=ExtResource( 2 )]
